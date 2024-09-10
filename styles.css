@@ -28,9 +28,9 @@ header {
     align-items: center;
 }
 
-/* Logo Styling (hidden on the home page) */
+/* Logo Styling */
 .logo {
-    background-image: url('hanuman-logo.jpg');
+    background-image: url('hanuman-logo.jpg'); /* Make sure the path to the logo is correct */
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
@@ -38,11 +38,6 @@ header {
     margin-left: 20px;
     display: inline-block;
     vertical-align: middle;
-}
-
-/* Remove logo on the home page */
-.home .logo {
-    display: none;
 }
 
 header nav ul {
@@ -75,7 +70,6 @@ a:hover {
 
 /* Hero Section */
 #hero {
-    background-image: url('hanuman-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -98,6 +92,11 @@ a:hover {
     font-size: 1.5rem;
     font-style: italic;
     color: #f4c542;
+}
+
+/* Home Page Specific Styling */
+.home #hero {
+    background-image: url('hanuman-background.jpg'); /* Ensure the background image path is correct */
 }
 
 /* Section Styling */
@@ -132,26 +131,40 @@ a:hover {
     background-color: #f9f9f9;
 }
 
-/* Table Styling */
+/* Table Styling for Temples Page */
 table {
     width: 100%;
-    margin: 20px 0;
     border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+th, td {
     padding: 10px;
-    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
     background-color: #3d1b1b;
     color: #f4c542;
+    text-align: left;
 }
 
 td {
     background-color: #ffffff;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
 }
 
 /* Footer Styling */
