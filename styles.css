@@ -181,6 +181,23 @@ footer p {
     font-size: 0.9rem;
 }
 
+/* Styling for the highlighted "Click here" button */
+.highlight-button {
+    background-color: #f4c542; /* Background color for the button */
+    color: #3d1b1b; /* Text color */
+    padding: 4px 8px; /* Padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.highlight-button:hover {
+    background-color: #ffcc00; /* Darker shade on hover */
+    color: #ffffff; /* Text color change on hover */
+}
+
+
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
     header nav ul {
