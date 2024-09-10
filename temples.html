@@ -1,58 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famous Temples of Lord Hanuman</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<section id="temples" class="section">
+    <h2>Famous Temples of Lord Hanuman</h2>
 
-    <header>
-        <div class="logo">
-            <img src="hanuman-logo.png" alt="Lord Hanuman">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="story.html">The Legend</a></li>
-                <li><a href="temples.html">Famous Temples</a></li>
-                <li><a href="biography.html">Biography</a></li>
-                <li><a href="festivals.html">Festivals</a></li>
-                <li><a href="chalisa.html">Hanuman Chalisa</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Table for Temples -->
+    <table>
+        <tr>
+            <th>Temple Name</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Sankat Mochan Hanuman Temple</td>
+            <td>Varanasi, Uttar Pradesh</td>
+        </tr>
+        <tr>
+            <td>Jakhu Temple</td>
+            <td>Shimla, Himachal Pradesh</td>
+        </tr>
+        <tr>
+            <td>Hanuman Garhi</td>
+            <td>Ayodhya, Uttar Pradesh</td>
+        </tr>
+        <tr>
+            <td>Namakkal Anjaneyar Temple</td>
+            <td>Namakkal, Tamil Nadu</td>
+        </tr>
+    </table>
 
-    <section id="temples" class="section">
-        <h2>Famous Temples of Lord Hanuman</h2>
-        <table>
-            <tr>
-                <th>Temple Name</th>
-                <th>Location</th>
-            </tr>
-            <tr>
-                <td>Sankat Mochan Hanuman Temple</td>
-                <td>Varanasi, Uttar Pradesh</td>
-            </tr>
-            <tr>
-                <td>Jakhu Temple</td>
-                <td>Shimla, Himachal Pradesh</td>
-            </tr>
-            <tr>
-                <td>Hanuman Garhi</td>
-                <td>Ayodhya, Uttar Pradesh</td>
-            </tr>
-            <tr>
-                <td>Namakkal Anjaneyar Temple</td>
-                <td>Namakkal, Tamil Nadu</td>
-            </tr>
-        </table>
-    </section>
+    <!-- Dropdown Menu for Maps -->
+    <label for="temple-maps">Visit Temple Maps: </label>
+    <select id="temple-maps">
+        <option value="" disabled selected>Select a Temple</option>
+        <option value="https://goo.gl/maps/WjKt5Z">Sankat Mochan Hanuman Temple</option>
+        <option value="https://goo.gl/maps/JakhuTemple">Jakhu Temple</option>
+        <option value="https://goo.gl/maps/HanumanGarhi">Hanuman Garhi</option>
+        <option value="https://goo.gl/maps/NamakkalAnjaneyarTemple">Namakkal Anjaneyar Temple</option>
+    </select>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Lord Hanuman. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+<!-- JavaScript to Handle Map Redirection -->
+<script>
+    document.getElementById('temple-maps').addEventListener('change', function () {
+        var selectedMap = this.value;
+        if (selectedMap) {
+            window.open(selectedMap, '_blank');
+        }
+    });
+</script>
