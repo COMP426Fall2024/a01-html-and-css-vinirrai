@@ -1,98 +1,136 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background-color: #d81b60;
-    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3d1b1b;
+    color: #f4c542;
     padding: 10px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
 }
 
-h1, h2 {
-    color: #d81b60;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #ffffff;
-    border: 2px solid #d81b60;
-}
-
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #d81b60;
-    text-align: left;
-}
-
-th, td {
-    padding: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #d81b60;
-    color: white;
-}
-
-/* Class-based selector */
-.selected {
-    font-weight: bold;
-    color: #d81b60;
-}
-
-/* ID-based selector */
-#special-text {
-    color: #d81b60;
-    font-size: 1.5em;
-}
-
-/* Hover effect */
-a:hover {
-    color: #0073e6;
-}
-
-/* Width and height for image */
-img {
-    width: 100%;
+header .logo img {
+    width: 80px;
     height: auto;
-    max-width: 400px;
-    border: 3px solid #d81b60;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #f4c542;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('hanuman-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #f4c542;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #3d1b1b;
+    margin-bottom: 20px;
+}
+
+.section p, .section ul {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Blockquote for Chalisa */
+blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 700px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #3d1b1b;
+    color: #f4c542;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9rem;
 }
