@@ -1,12 +1,13 @@
 <section id="temples" class="section">
     <h2>Famous Temples of Lord Hanuman</h2>
 
-    <!-- Table for Temples -->
+    <!-- Table displaying the names and locations of famous temples of Lord Hanuman -->
     <table>
         <tr>
             <th>Temple Name</th>
             <th>Location</th>
         </tr>
+        <!-- Temple rows with names and their respective locations -->
         <tr>
             <td>Sankat Mochan Hanuman Temple</td>
             <td>Varanasi, Uttar Pradesh</td>
@@ -25,10 +26,12 @@
         </tr>
     </table>
 
-    <!-- Dropdown Menu for Maps -->
+    <!-- Dropdown Menu for selecting a temple and viewing its location on Google Maps -->
     <label for="temple-maps">Visit Temple Maps: </label>
     <select id="temple-maps">
+        <!-- Disabled default option prompting the user to select a temple -->
         <option value="" disabled selected>Select a Temple</option>
+        <!-- Each option links to the Google Maps location of the respective temple -->
         <option value="https://goo.gl/maps/WjKt5Z">Sankat Mochan Hanuman Temple</option>
         <option value="https://goo.gl/maps/JakhuTemple">Jakhu Temple</option>
         <option value="https://goo.gl/maps/HanumanGarhi">Hanuman Garhi</option>
@@ -38,10 +41,11 @@
 
 <!-- JavaScript to Handle Map Redirection -->
 <script>
+    // Adding an event listener to the dropdown menu to detect the selected temple
     document.getElementById('temple-maps').addEventListener('change', function () {
-        var selectedMap = this.value;
+        var selectedMap = this.value; // Get the selected value (Google Maps link)
         if (selectedMap) {
-            window.open(selectedMap, '_blank');
+            window.open(selectedMap, '_blank'); // Open the selected temple's map in a new tab
         }
     });
 </script>
