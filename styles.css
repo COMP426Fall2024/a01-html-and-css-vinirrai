@@ -30,7 +30,8 @@ header {
 
 /* Logo Styling */
 .logo {
-    background-image: url('hanuman-logo.jpg'); /* Make sure the path to the logo is correct */
+    background-image: url('hanuman-logo.jpg');
+    /* Make sure the path to the logo is correct */
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
@@ -63,9 +64,12 @@ header nav ul li a:hover {
 
 /* Global hover effect for all links */
 a:hover {
-    color: #ffcc00; /* Change color on hover */
-    text-decoration: underline; /* Underline on hover */
-    transition: color 0.3s ease; /* Smooth transition */
+    color: #ffcc00;
+    /* Change color on hover */
+    text-decoration: underline;
+    /* Underline on hover */
+    transition: color 0.3s ease;
+    /* Smooth transition */
 }
 
 /* Hero Section */
@@ -96,7 +100,8 @@ a:hover {
 
 /* Home Page Specific Styling */
 .home #hero {
-    background-image: url('hanuman-background.jpg'); /* Ensure the background image path is correct */
+    background-image: url('hanuman-background.jpg');
+    /* Ensure the background image path is correct */
 }
 
 /* Section Styling */
@@ -140,7 +145,8 @@ table {
     text-align: left;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
@@ -180,6 +186,32 @@ footer {
 footer p {
     font-size: 0.9rem;
 }
+
+/* Styling for the highlighted "Click here" button */
+.highlight-button {
+    background-color: #f4c542;
+    /* Background color for the button */
+    color: #3d1b1b;
+    /* Text color */
+    padding: 4px 8px;
+    /* Padding to make it look like a button */
+    border-radius: 5px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Make the text bold */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.highlight-button:hover {
+    background-color: #ffcc00;
+    /* Darker shade on hover */
+    color: #ffffff;
+    /* Text color change on hover */
+}
+
 
 /* Media Query for Responsiveness */
 @media (max-width: 768px) {
